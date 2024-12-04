@@ -7,7 +7,7 @@
     <meta name="keywords" content="SEO agency, search engine optimization, SEO services, digital marketing, increase organic traffic, Optimize360">
     <meta name="author" content="Optimize360">
     <title>Optimize360 - SEO Agency</title>
-    
+
     <!-- Open Graph Tags for Social Sharing -->
     <meta property="og:title" content="Optimize360 - SEO Agency">
     <meta property="og:description" content="Expert SEO services to grow your business. Improve your search engine rankings and increase organic traffic with Optimize360.">
@@ -22,37 +22,237 @@
     <meta name="twitter:creator" content="@Optimize360">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css"> <!-- Optional, for external styles -->
-
-    <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Optimize360",
-            "url": "https://www.optimize360.com",
-            "logo": "your-logo-url.jpg",
-            "sameAs": [
-                "https://www.facebook.com/Optimize360",
-                "https://twitter.com/Optimize360",
-                "https://www.linkedin.com/company/Optimize360"
-            ],
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+1-800-123-4567",
-                "contactType": "Customer Service"
-            },
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 SEO Lane",
-                "addressLocality": "City",
-                "addressRegion": "State",
-                "postalCode": "12345",
-                "addressCountry": "Country"
-            }
+    
+    <style>
+        /* General reset and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
-    </script>
 
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+
+        /* Header Styling */
+        header {
+            background: #34495e;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header nav .logo img {
+            max-width: 150px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: #2980b9;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+        }
+
+        /* Services Section */
+        .services {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            margin: 20px;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 8px;
+        }
+
+        .service-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        /* About Section */
+        .about {
+            background: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-item {
+            margin-bottom: 30px;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+
+        .testimonial-item cite {
+            display: block;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #2c3e50;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #2980b9;
+            color: #fff;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background: #3498db;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #34495e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer ul li a:hover {
+            color: #3498db;
+        }
+    </style>
 </head>
 <body>
 
