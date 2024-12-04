@@ -69,11 +69,22 @@
             gap: 20px;
         }
 
+        header nav ul li {
+            margin: 0;
+        }
+
         header nav ul li a {
             color: #fff;
             font-weight: bold;
             font-size: 1rem;
             text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background: #2980b9;
         }
 
         /* Hero Section */
@@ -198,35 +209,15 @@
             margin-bottom: 30px;
         }
 
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            max-width: 600px;
-            margin: 0 auto;
+        .contact .info {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin: 10px 0;
         }
 
-        .contact form input, .contact form textarea {
-            padding: 10px;
-            width: 100%;
-            max-width: 400px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact form button {
-            background: #2980b9;
-            color: #fff;
-            padding: 12px 40px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .contact form button:hover {
-            background: #3498db;
+        .contact .info a {
+            color: #2980b9;
+            text-decoration: underline;
         }
 
         /* Footer Section */
@@ -329,13 +320,11 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you're ready to take your website to the next level, contact us today!</p>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <p>If you're ready to take your website to the next level, get in touch with us today!</p>
+            <div class="info">
+                <p><strong>Email:</strong> <a href="mailto:Optimize360@gmail.com">Optimize360@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+44 07368369308">+44 07368369308</a></p>
+            </div>
         </div>
     </section>
 
